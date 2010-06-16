@@ -1,0 +1,7 @@
+.*.swp
+*~
+tags
+libexpat.dll
+README.txt
+expat-2.0.1/*
+
