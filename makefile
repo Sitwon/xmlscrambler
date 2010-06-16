@@ -9,7 +9,7 @@ all: $(OBJECTS)
 	strip $(OBJECTS)
 debug: $(DBG_OBJECTS)
 clean:
-	-rm $(OBJECTS) $(DBG_OBJECTS)
+	rm -f $(OBJECTS) $(DBG_OBJECTS)
 
 xmlscrambler-test: xmlscrambler.c
 	$(CC) $(CFLAGS) $(DBG_CFLAGS) -o $@ $^
