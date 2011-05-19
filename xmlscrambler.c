@@ -87,7 +87,7 @@ void print_usage(char *message) {
 	fprintf(stderr, "Usage: xmlscrambler <input file> <output file>\n");
 	fprintf(stderr, "\tEither parameter can be '-' to indicate standard input or output.\n");
 	if (strcmp(message, "")!=0)
-		fprintf(stderr, message);
+		fputs(message, stderr);
 	exit(1);
 }
 
